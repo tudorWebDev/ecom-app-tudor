@@ -12,7 +12,7 @@ const success = () => {
         setTotalPrice(0)
         setTotalQuantities(0)
         runConfetti()
-    },[])
+    })
 
   return (
   <div className="success-wrapper">

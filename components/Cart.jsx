@@ -12,10 +12,11 @@ import toast from "react-hot-toast";
 import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from "../lib/getStripe";
+import Image from "next/image";
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart,toggleCartItemQuantity,onRemove } =
+  const { totalPrice, totalQuantities, cartItems, setShowCart,toggleCartItemQuantity,onRemove,setCartItems,setTotalPrice,setTotalQuantities } =
     useStateContext();
 
     const handleCheckout= async ()=>{
@@ -65,9 +66,10 @@ const Cart = () => {
           {cartItems.length >= 1 &&
             cartItems.map((item, index) => (
               <div className="product" key={item._id}>
-                <img
+                <Image
                   src={urlFor(item?.image[0])}
                   className="cart-product-image"
+                  alt="product"
                 />
                 <div className="item-desc">
                   <div className="flex top">
