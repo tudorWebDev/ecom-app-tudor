@@ -4,7 +4,7 @@ import {BsBagCheckFill} from 'react-icons/bs';
 import {useStateContext} from '../context/StateContext';
 import { runConfetti } from "../lib/utils";
 
-const success = () => {
+const Success = () => {
     const { setCartItems, setTotalPrice,setTotalQuantities}=useStateContext()
     useEffect(()=>{
         localStorage.clear()
@@ -35,4 +35,4 @@ const success = () => {
   );
 };
 
-export default success;
+export default Success;
