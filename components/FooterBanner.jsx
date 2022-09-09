@@ -8,7 +8,7 @@ const FooterBanner = ({footerBanner:{discount, largeText1, desc, largeText2, sal
   return (
     <div className='footer-banner-container'>
       <div>
-        <Image src={urlFor(image)} className="footer-banner-image" alt='not displayed'/>
+        <img src={urlFor(image)} className="footer-banner-image" alt='not displayed'/>
         </div>
       <div className='banner-desc'>
         <div className='left'>
