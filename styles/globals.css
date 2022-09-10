@@ -44,13 +44,16 @@ a {
   justify-content: space-between;
   margin: 6px 1rem;
   
+  
 }
 .logo span{
   font-size: x-large;
   margin: 0 2px;
+ 
 }
 .logo{
   margin-bottom: 10px;
+  
   
 }
 .marquee-text {
@@ -270,6 +273,13 @@ span.text-red {
 }
 .banner-desc .left{
   text-align: end;
+}
+.products-heading{
+  line-height: 1.3;
+}
+.products-heading p{
+  font-size: 1.2em;
+  font-weight: 500;
 }
 .banner-desc .left h3 {
   font-weight: 900;
@@ -547,6 +557,14 @@ span.text-red {
   margin-top: 10px;
   align-items: center;
 }
+.logo{
+  color: #dcdcdc;
+  transition: 0.4s ease-in-out;
+}
+.logo:hover{
+  color: #90dff0;
+}
+
 .product-detail-desc .buttons {
   display: flex;
   gap: 30px;
@@ -1046,6 +1064,12 @@ span.text-red {
     color: #cdcdcd;
     padding-bottom: 10px;
   }
+  .success a{
+    font-size: 17px;
+    color: #cdcdcd;
+    padding-bottom: 10px;
+  }
+
   .btn-container {
     width: 300px;
     margin: auto;

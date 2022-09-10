@@ -11,7 +11,7 @@ const Success = () => {
         setCartItems([])
         setTotalPrice(0)
         setTotalQuantities(0)
-        runConfetti()
+        
     })
 
   return (
