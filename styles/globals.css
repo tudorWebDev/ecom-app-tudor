@@ -493,7 +493,7 @@ span.text-red {
 .product-detail-image {
   border-radius: 15px;
   background-color: #89cff0;
-
+object-fit: cover;
   width: 400px;
   height: 400px;
   cursor: pointer;
