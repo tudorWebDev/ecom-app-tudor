@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 html,
 body,
 * {
@@ -8,7 +10,7 @@ body,
   box-sizing: border-box;
 }
 body {
-  background-color: #0a2049;
+  background-color: #F6F8F9;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -19,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ebebeb;
+  color: black;
 }
 
 
@@ -60,7 +62,7 @@ a {
   font-size: 29px;
   font-weight: 600;
   margin: 60px 10px;
-  color: #dcdcdc;
+  color: #0a3060;
 }
 .marquee {
   position: relative;
@@ -94,12 +96,12 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: #0a3060;
   font-size: 18px;
 }
 .cart-icon {
-  font-size: 30px;
-  color: gray;
+  font-size: 35px;
+  color: black;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
@@ -144,70 +146,87 @@ span.text-red {
 .product-image {
   border-radius: 15px;
 
-  background-color: #ebebeb;
+  background-color: #dcdcdc;
   transform: scale(1, 1);
   transition:  0.5s ease;
 }
 .product-image:hover{
-  background-color: #89cff0;
+  background-color: rgba(65, 65, 65, 1);
 }
 
 .product-name {
   margin-top: 10px;
-  font-weight: 500;
-  font-size: larger;
-  color: #dcdcdc;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
 }
 .product-price {
   font-weight: 800;
+  font-size: 1.25rem;
   margin-top: 6px;
-  color: #dcdcdc;
+  color: black;
 }
 
 .hero-banner-container {
   padding: 100px 40px;
-  background-color: #89cff0;
+  background-color: white;
   border-radius: 15px;
   position: relative;
-  height: 500px;
-  line-height: 0.9;
+  height: 550px;
+  line-height: 1.1;
   width: 100%;
 }
+.hero-banner-container .bg-overlay{
+  position: absolute; /* Sit on top of the page content */
+   /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.18); /* Black background with opacity */
+  z-index: 1;
+  border-radius: 15px;
+}
+
 .hero-banner-text{
-  z-index: 10000 !important;
+  z-index: 1 !important;
   position: absolute;
-  color: #0a2049;
+  color: black;
 }
 .hero-banner-container .beats-solo {
-  font-size: 30px;
+  font-size: 34px;
+  font-weight: 700;
 }
 .hero-banner-container button {
   border-radius: 15px;
-  padding: 15px 18px;
-  background-color: #0a2049;
+  padding: 20px 24px;
+  background-color: black;
   color: white;
-  border: none;
-  margin-top: 40px;
-  font-size: 18px;
+  border: 2px solid  black;
+  margin-top: 20px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  z-index: 10000 !important;
+  z-index: 1 !important;
   transition: 0.4s ease-in-out;
 }
 .hero-banner-container button:hover{
   scale: 1.1;
-  background-color: #0a3060;
+  background-color: inherit;
+  color: black;
 }
 
 
 .hero-banner-container h3 {
   font-size: 4rem;
   margin-top: 4px;
-  color: #0a2049;
+  color: black;
 }
 .hero-banner-container h1 {
-  color: #0a2049;
-  font-size: 8em;
+  color: black;
+  font-size: 6em;
   margin-left: 0px;
   text-transform: uppercase;
 }
@@ -228,10 +247,10 @@ span.text-red {
 .products-heading {
   text-align: center;
   margin: 40px 0px;
-  color: #dcdcdc;
+  color: black;
 }
 .products-heading h2 {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 800;
 }
 .products-heading p {
@@ -240,15 +259,16 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 80px 30px;
-  background-color: #0a3060;
+  background-color: #dcdcdc;
   border-radius: 15px;
   
   
   max-height: 400px;
   line-height: 1;
-  color: white;
+  color: black;
   max-width: 1800px;
   margin-top: 120px;
+  font-weight: 500;
 }
 .banner-desc {
   display: flex;
@@ -257,10 +277,10 @@ span.text-red {
 }
 .banner-desc button {
   border-radius: 15px;
-  padding: 10px 16px;
-  background-color: white;
-  color: #324d67;
-  border: none;
+  padding: 15px 20px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
   margin-top: 30px;
   font-size: 22px;
   font-weight: 500;
@@ -270,6 +290,7 @@ span.text-red {
 .banner-desc button:hover{
   scale: 1.1;
   background-color: #dcdcdc;
+  color: black;
 }
 .banner-desc .left{
   text-align: end;
@@ -329,7 +350,7 @@ span.text-red {
 .cart-container {
   height: 100vh;
   width: 600px;
-  background-color:#0a3060;
+  background-color:#dcdcdc;
   float: right;
   padding: 40px 10px;
   position: relative;
@@ -337,11 +358,12 @@ span.text-red {
 }
 
 .footer-container {
-  color: #dcdcdc;
+  color: black;
   text-align: center;
   margin-top: 20px;
   padding: 30px 10px;
   font-weight: 600;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,8 +371,8 @@ span.text-red {
   justify-content: center;
 }
 .footer-container .icons {
-  color: #89cff0;
-  font-size: 30px;
+  color: black;
+  font-size: 35px;
   display: flex;
   gap: 10px;
   transition: 0.4s ease-in-out;
@@ -368,14 +390,14 @@ span.text-red {
   font-weight: 500;
   cursor: pointer;
   gap: 2px;
-  color: #89cff0;
+  color: black;
   margin-left: 10px;
   border: none;
   background-color: transparent;
   transition: 0.4s ease-in-out;
 }
 .cart-heading:hover{
- color: #324d67;
+ color: gray;
 }
 
 .cart-heading .heading {
@@ -383,7 +405,7 @@ span.text-red {
 }
 .cart-num-items {
   margin-left: 10px;
-  color: #89cff0;
+  color: black;
 }
 .empty-cart {
   margin: 40px;
@@ -414,7 +436,7 @@ span.text-red {
   width: 180px;
   height: 150px;
   border-radius: 15px;
-  background-color: #89cff0;
+  background-color:#cdcdcd;
 }
 .item-desc .flex {
   display: flex;
@@ -464,19 +486,21 @@ span.text-red {
   border-radius: 15px;
   border: none;
   font-size: 20px;
-  margin-top: 10px;
+  
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #89cff0;
-  color: #0a2049;
+  background-color: black;
+  color: white;
   font-weight: 600;
+  border: 2px solid black;
   cursor: pointer;
   transform: scale(1, 1);
   transition:  0.5s ease;
 }
 .btn:hover {
   transform: scale(1.1, 1.1);
-  background-color: #90dff0;
+  background-color: inherit;
+  color: black;
 }
 .product-detail-container {
 
@@ -486,14 +510,15 @@ span.text-red {
   margin: 2em;
   margin-top: 60px;
  
-  color: #dcdcdc;
+  color: black;
+  font-weight: 600;
   max-width: max-content;
 }
 
 .product-detail-image {
   border-radius: 15px;
-  background-color: #89cff0;
-object-fit: cover;
+  background-color: #dcdcdc;
+object-fit: contain;
   width: 400px;
   height: 400px;
   cursor: pointer;
@@ -501,7 +526,7 @@ object-fit: cover;
   background-size: cover;
 }
 .product-detail-image:hover {
-  background-color: #90dff0;
+  background-color: rgba(55, 55, 55, 1);
 }
 .small-images-container {
   display: flex;
@@ -510,17 +535,17 @@ object-fit: cover;
 }
 .small-image {
   border-radius: 8px;
-  background-color: #ebebeb;
+  background-color: #dcdcdc;
   width: 70px;
   height: 70px;
   cursor: pointer;
 }
 
 .selected-image {
-  background-color: #89cff0;
+  background-color: rgba(55, 55, 55, 1);
 }
 .reviews {
-  color: #89cff0;
+  color: darkgoldenrod;
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -529,20 +554,20 @@ object-fit: cover;
 
 .product-detail-desc h4 {
   margin-top: 10px;
-  font-size: larger;
+  font-size: 1.4rem;
 }
 .product-detail-desc p {
   margin-top: 10px;
 }
 .reviews p {
-  color: white;
+  color:  black;
   margin-top: 0px;
 }
 .product-detail-desc .price {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: #dcdcdc;
+  color: black;
 }
 .price .old-price,
 .product-price .old-price,
@@ -558,11 +583,13 @@ object-fit: cover;
   align-items: center;
 }
 .logo{
-  color: #dcdcdc;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
   transition: 0.4s ease-in-out;
 }
 .logo:hover{
-  color: #90dff0;
+  color: #cdcdcd;
 }
 
 .product-detail-desc .buttons {
@@ -571,12 +598,12 @@ object-fit: cover;
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-  border: 1px solid #0a3060;
+  border: 1px solid black;
   margin-top: 40px;
   font-size: 22px;
   font-weight: 500;
-  background-color: #324d67;
-  color: #cdcdcd;
+  background-color: white;
+  color: black;
   cursor: pointer;
   width: 200px;
   transform: scale(1, 1);
@@ -589,7 +616,7 @@ object-fit: cover;
   width: 200px;
 
   padding: 10px 20px;
-  background-color: #89cff0;
+  background-color: black;
   color: white;
   border: none;
   margin-top: 40px;
@@ -603,7 +630,7 @@ object-fit: cover;
   transform: scale(1.1, 1.1);
 }
 .quantity-desc {
-  border: 1px solid gray;
+  border: 1px solid black;
   padding: 6px;
 }
 .quantity-desc span {
@@ -645,7 +672,7 @@ object-fit: cover;
 }
 .success-wrapper,
 .cancel-wrapper {
-  background-color: #0a2049;
+  background-color: inherit;
   min-height: 60vh;
   
 }
@@ -672,19 +699,22 @@ object-fit: cover;
   margin-top: 15px 0px;
   font-weight: 900;
   font-size: 40px;
-  color: #324d67;
+  color: black;
 }
 .success .email-msg {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
+}
+.success a{
+  font-size: 1.3rem;
 }
 .cancel p {
   font-size: 20px;
   font-weight: 600;
 }
 .success .description {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   margin: 10px;
@@ -693,6 +723,7 @@ object-fit: cover;
 .success .description .email {
   margin-left: 5px;
   color: #f02d34;
+  
 }
 .product-max-qty {
   margin-top: 10px;
@@ -703,11 +734,14 @@ object-fit: cover;
     
   }
   .products-heading h2{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin-bottom: 6px;
   }
   .products-heading p{
     font-size: 1.5rem;
+  }
+  .hero-banner-container button{
+    padding: 20px;
   }
   .hero-banner-container {
     height: 560px;
@@ -718,6 +752,7 @@ object-fit: cover;
     top: 0;
     right: 0;
   }
+  
   .footer-banner-container {
    display: flex;
   justify-content: center;
@@ -766,8 +801,10 @@ object-fit: cover;
     gap: 20px;
   }
   .hero-banner-container {
-    line-height: 1.2;
+    line-height: 1.3;
    max-height: 500px;
+   
+  
   }
   .hero-banner-image{
     width: 80%;
@@ -778,10 +815,14 @@ object-fit: cover;
   .hero-banner-container h3 {
     font-size: 3rem;
   }
+  .hero-banner-container .beats-solo {
+    font-size: 2.5rem;
+  }
   .hero-banner-container button {
     margin-top: 20px;
-    z-index: 10000;
+    z-index: 10;
   }
+ 
   .desc {
     bottom: 60px;
   }
@@ -836,7 +877,7 @@ object-fit: cover;
   }
   .flex h5 {
     font-size: 16px;
-    color: #324d67;
+    color: black;
   }
   .flex h4 {
     font-size: 16px;
@@ -855,29 +896,33 @@ object-fit: cover;
   }
   .success-wrapper,
   .cancel-wrapper {
-    min-height: 69vh;
-    background-color: #0a2049;
+    min-height: 70vh;
+    background-color: white;
+    width: 100%;
+    
   }
   .success,
   .cancel {
     max-width: 370px;
     margin-top: 100px;
     padding: 20px;
-    background-color: #0a2049;
+    background-color: black;
     
   }
   .success {
-    height: 350px;
-    background-color: #0a2049;
+    
+    height: 450px;
+    background-color: #cdcdcd;
+    color: black;
   }
   .success h2 {
-    font-size: 19px;
-    color: #cdcdcd;
+    font-size: 24px;
+    color: black;
     padding-bottom: 10px;
   }
   .success p{
     font-size: 19px;
-    color: #cdcdcd;
+    color: black;
     padding-bottom: 10px;
   }
   .btn-container {
@@ -904,9 +949,16 @@ object-fit: cover;
     padding: 1em;
     height: 560px;
   }
+  .hero-banner-container .beats-solo{
+    font-size: 1.8rem;
+  }
+  .hero-banner-container button{
+    font-size: 18px;
+    padding: 16px 18px;
+  }
   .hero-banner-image {
-   width: 100%;
-   height: fit-content;
+   width: auto;
+   height: 100%;
    top: auto;
    bottom: 0;
   }
@@ -1039,34 +1091,34 @@ object-fit: cover;
   }
   .success-wrapper,
   .cancel-wrapper {
-    min-height: 69vh;
-    background-color: #0a2049;
+    min-height: 70vh;
+    background-color: inherit;
   }
   .success,
   .cancel {
     max-width: 370px;
     margin-top: 100px;
     padding: 20px;
-    background-color: #0a2049;
+    background-color: #dcdcdc;
     
   }
   .success {
-    height: 350px;
-    background-color: #0a2049;
+    height: 450px;
+    background-color: #dcdcdc;
   }
   .success h2 {
-    font-size: 19px;
-    color: #cdcdcd;
+    font-size: 20px;
+    color: black;
     padding-bottom: 10px;
   }
   .success p{
     font-size: 19px;
-    color: #cdcdcd;
+    color: black;
     padding-bottom: 10px;
   }
   .success a{
-    font-size: 17px;
-    color: #cdcdcd;
+    font-size: 20px;
+    color: black;
     padding-bottom: 10px;
   }
 
@@ -1075,4 +1127,14 @@ object-fit: cover;
     margin: auto;
   }
 }
+@media screen and (max-width: 580px){
+
+  .hero-banner-image {
+    width: 100%;
+    height: auto;
+    top: auto;
+    bottom: 0;
+   }
+}
+
 
