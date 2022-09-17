@@ -21,6 +21,7 @@ h3,
 h4,
 h5,
 h6 {
+  cursor:default;
   color: black;
 }
 
@@ -728,7 +729,62 @@ object-fit: contain;
 .product-max-qty {
   margin-top: 10px;
 }
+
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+width: 100%;
+margin-top: 12em;
+}
+ 
+ 
+
+ 
+
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.service{
+  text-align: center;
+ width: 100%;
+  padding: 15px;
+  line-height: 1.9;
+  border-right:2px solid black;
+  
+}
+.service:nth-child(4){
+  border: none;
+}
+@media screen and (max-width: 1300px){
+  .services{
+    flex-direction: column;
+  }
+  .service{
+    border-right: none;
+    border-bottom:2px solid black ;
+    padding-top: 25px;
+  }
+  .service h1{
+    font-size: 2.1rem;
+  }
+  .service h3{
+    font-size: 1.2rem;
+  }
+
+
+}
 @media screen and (max-width: 850px){
+  .service h1{
+    font-size: 1.6rem;
+  }
+  .service h3{
+    font-size: 1.1rem;
+  }
   .products-heading{
     margin-top: 80px;
     
